@@ -3,7 +3,8 @@
 
 std::vector<int> intersection(std::vector<int> vector1,std::vector<int> vector2){
 std::vector<int> temp;
-  int i = 0, j = 0;
+	int i = 0;
+	int j = 0;
   while (i < vector1.size() && j < vector2.size())
     {
       if (vector1[i] < vector2[j])
@@ -21,8 +22,8 @@ std::vector<int> temp;
     return temp;
 }
 int main() {
-const std::vector<int> vector1 {-7, 2, 3, 7, 15, 18, 23},
-                       vector2 {-8, 3, 5, 8, 15, 23, 30};
+const std::vector<int> vector1 {-7, 2, 3, 7, 15, 18, 23};
+const std::vector<int> vector2 {-8, 3, 5, 8, 15, 23, 30};
 std::vector<int> result = intersection(vector1, vector2);
 for (int element: result) {
     std::cout << element << " "; }
