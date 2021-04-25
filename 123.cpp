@@ -6,7 +6,8 @@ void fraction(double &integral, double &fractional, double param) {
 }
 
 int main() {
-	double integral, fractional;
+	double integral;
+	double fractional;
 	fraction(integral, fractional, 3.14159);
 	std::cout << integral << " " << fractional << std::endl;
 }
