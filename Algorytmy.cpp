@@ -1,6 +1,5 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include <stdio.h>
 #include <cstdio>
 #include <vector>
 #include <string>
@@ -20,7 +19,7 @@ int main ()
 
   vector < int >a;
 
-  cout << "Wprowadz tablice a (oddzielona spacja): "; // pole wprowadzenia tablicy A
+  cout << "Wprowadz tablice a (oddzielona spacja): ";
   getline (cin, wektor);
   sstream.str (wektor);
   while (sstream >> vala)
@@ -29,7 +28,7 @@ int main ()
   sstream.clear ();
 
   vector < int >b;
-  cout << "Wprowadz tablice b (oddzielona spacja): "; // pole wprowadzenia tablicy B
+  cout << "Wprowadz tablice b (oddzielona spacja): ";
   getline (cin, wektor);
   sstream.str (wektor);
   while (sstream >> valb)
@@ -37,11 +36,11 @@ int main ()
 
   high_resolution_clock::time_point t1 = high_resolution_clock::now();
   vector < int >c;
-  int m = a.size(); // zmienna m = rozmiarowi tablicy A
-  int n = b.size(); // zmienna n = rozmiarowi tablicy B
-
-  int i = 0, j = 0; // zmienne wskaźnikowe
-  while (i < m && j < n) // otwarcie pętli dopóki
+  int m = a.size();
+  int n = b.size();
+  int i = 0;
+  int j = 0;
+  while (i < m && j < n)
     {
       if (a[i] < b[j])
 	i++;
@@ -62,14 +61,14 @@ int main ()
 
     cout << "\nBez Duplikatow:" << " ";
     {
-    c.erase(unique(c.begin(), c.end()), c.end());       // usunięcie duplikatów za pomocą funkcji,
-        for(auto it = c.cbegin(); it != c.cend(); it++) // funkcja zawiera pętlę for do usunięcia duplikatów
+    c.erase(unique(c.begin(), c.end()), c.end());
+        for(auto it = c.cbegin(); it != c.cend(); it++)
         cout << *it << " ";
     }
     {
     cout << "\nNumer Indeksu Ostatniej wartosci (liczba elementow w wektorze):" << " ";
         int k = c.size();
-        cout << k << " "; //wypisanie szukanego elementu = rozmiarowi badanego wektora
+        cout << k << " ";
     }
      high_resolution_clock::time_point t2 = high_resolution_clock::now();
      duration<double> time_span = duration_cast<duration<double>>(t2 - t1);
