@@ -17,7 +17,7 @@ int main ()
   int vala;
   int valb;
 
-  vector < int >a;
+  vector <int> a;
 
   cout << "Wprowadz tablice a (oddzielona spacja): ";
   getline (cin, wektor);
@@ -27,7 +27,7 @@ int main ()
 
   sstream.clear ();
 
-  vector < int >b;
+  vector <int> b;
   cout << "Wprowadz tablice b (oddzielona spacja): ";
   getline (cin, wektor);
   sstream.str (wektor);
@@ -35,11 +35,11 @@ int main ()
     b.push_back (valb);
 
   high_resolution_clock::time_point t1 = high_resolution_clock::now();
-  vector < int >c;
-  unsigned m = a.size();
-  unsigned n = b.size();
-  unsigned i = 0;
-  unsigned j = 0;
+  vector<int> c;
+  unsigned long m = a.size();
+  unsigned long n = b.size();
+  int i = 0;
+  int j = 0;
   while (i < m && j < n)
     {
       if (a[i] < b[j])
@@ -67,7 +67,7 @@ int main ()
     }
     {
     cout << "\nNumer Indeksu Ostatniej wartosci (liczba elementow w wektorze):" << " ";
-        unsigned vectorElements = c.size();
+        unsigned long vectorElements = c.size();
         cout << vectorElements << " ";
     }
      high_resolution_clock::time_point t2 = high_resolution_clock::now();
