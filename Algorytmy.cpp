@@ -38,8 +38,8 @@ int main ()
   vector<int> c;
   unsigned long m = a.size();
   unsigned long n = b.size();
-  int i = 0;
-  int j = 0;
+  unsigned long i = 0;
+  unsigned long j = 0;
   while (i < m && j < n)
     {
       if (a[i] < b[j])
