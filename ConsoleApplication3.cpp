@@ -5,10 +5,10 @@
 
 using namespace std;
 void selection_sort(std::vector<int> &wektor) {
-    for (int i = 0; i < wektor.size() - 1; i++) {
-        int min = i;
+    for (unsigned i = 0; i < wektor.size() - 1; i++) {
+        unsigned min = i;
 
-        for (int j = i + 1; j < wektor.size(); j++) {
+        for (unsigned j = i + 1; j < wektor.size(); j++) {
             if (wektor[j] < wektor[min]) {
                 min = j;
             }
@@ -27,7 +27,7 @@ int main() {
 
     selection_sort(wektor);
 
-    for (int i = 0; i < wektor.size(); i++) {
+    for (unsigned i = 0; i < wektor.size(); i++) {
         std::cout << wektor[i] << " ";
     }
 }
