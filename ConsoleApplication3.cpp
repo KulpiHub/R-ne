@@ -21,9 +21,8 @@ void selection_sort(std::vector<int> &wektor) {
 }
 
 int main() {
-    ifstream ifs{ "test.txt" };
     std::vector<int> wektor;
-    for (int a; ifs >> a;) 
+    for (int a; cin >> a;) 
         wektor.push_back(a);
 
     selection_sort(wektor);
