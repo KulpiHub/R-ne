@@ -4,6 +4,7 @@
 #include <fstream>
 
 using namespace std;
+void selection_sort(std::vector<int> &wektor);
 void selection_sort(std::vector<int> &wektor) {
     for (unsigned i = 0; i < wektor.size() - 1; i++) {
         unsigned min = i;
