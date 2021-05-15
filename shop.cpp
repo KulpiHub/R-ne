@@ -2,7 +2,8 @@
 
 int main(){
 
-    int hours, minutes;
+    int hours;
+    int minutes;
 
     std::cin >> hours;
     hours *= 100;
