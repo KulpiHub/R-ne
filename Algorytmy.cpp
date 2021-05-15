@@ -36,10 +36,10 @@ int main ()
 
   high_resolution_clock::time_point t1 = high_resolution_clock::now();
   vector < int >c;
-  int m = a.size();
-  int n = b.size();
-  int i = 0;
-  int j = 0;
+  unsigned m = a.size();
+  unsigned n = b.size();
+  unsigned i = 0;
+  unsigned j = 0;
   while (i < m && j < n)
     {
       if (a[i] < b[j])
