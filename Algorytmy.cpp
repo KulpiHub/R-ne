@@ -56,7 +56,7 @@ int main ()
     {
     cout << "\nCzesc Wspolna:" << " ";
     }
-    for (i = 0; i < c.size (); i++)
+    for (unsigned i = 0; i < c.size (); i++)
     cout << c[i] << " ";
 
     cout << "\nBez Duplikatow:" << " ";
@@ -67,7 +67,7 @@ int main ()
     }
     {
     cout << "\nNumer Indeksu Ostatniej wartosci (liczba elementow w wektorze):" << " ";
-        int vectorElements = c.size();
+        unsigned vectorElements = c.size();
         cout << vectorElements << " ";
     }
      high_resolution_clock::time_point t2 = high_resolution_clock::now();
