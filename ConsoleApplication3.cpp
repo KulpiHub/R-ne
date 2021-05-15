@@ -1,0 +1,34 @@
+#include <utility>
+#include <vector>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+void selection_sort(std::vector<int> &wektor) {
+    for (int i = 0; i < wektor.size() - 1; i++) {
+        int min = i;
+
+        for (int j = i + 1; j < wektor.size(); j++) {
+            if (wektor[j] < wektor[min]) {
+                min = j;
+            }
+        }
+        std::swap(wektor[min], wektor[i]);
+        for (int i : wektor)
+            std::cout << i << " ";
+        std::cout << std::endl;
+    }
+}
+
+int main() {
+    ifstream ifs{ "test.txt" };
+    std::vector<int> wektor;
+    for (int a; ifs >> a;) 
+        wektor.push_back(a);
+
+    selection_sort(wektor);
+
+    for (int i = 0; i < wektor.size(); i++) {
+        std::cout << wektor[i] << " ";
+    }
+}

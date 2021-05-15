@@ -1,0 +1,19 @@
+
+.przycisk {
+    display: block;
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+}
+.big {
+    margin-left: 30px;
+    margin-top: 3px;
+    font-size: 30px;
+    list-style-type: disc;
+}
+li {
+    margin-top: 3px;
+    margin-left: 30px;
+    font-size: 20px;
+    list-style-type: disc;
+}
