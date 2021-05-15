@@ -1,10 +1,11 @@
 #include <vector>
 #include <iostream>
 
-std::vector<int> intersection(std::vector<int> vector1,std::vector<int> vector2){
+std::vector<int> intersection(const std::vector<int> &vector1,const std::vector<int> &vector2);
+std::vector<int> intersection(const std::vector<int> &vector1,const std::vector<int> &vector2){
 std::vector<int> temp;
-	int i = 0;
-	int j = 0;
+	unsigned i = 0;
+	unsigned j = 0;
   while (i < vector1.size() && j < vector2.size())
     {
       if (vector1[i] < vector2[j])
@@ -18,7 +19,7 @@ std::vector<int> temp;
 	  j++;
 	}
     }
-    for (i = 0; i < temp.size(); i++)
+    for (unsigned i = 0; i < temp.size(); i++)
     return temp;
 }
 int main() {
