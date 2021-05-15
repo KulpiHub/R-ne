@@ -3,6 +3,7 @@
 #include <random>
 #include <chrono>
 
+bool bernoulli(double p);
 bool bernoulli(double p)
 {
     if(p>=0 && p<=1)
