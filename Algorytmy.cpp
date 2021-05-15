@@ -67,8 +67,8 @@ int main ()
     }
     {
     cout << "\nNumer Indeksu Ostatniej wartosci (liczba elementow w wektorze):" << " ";
-        int k = c.size();
-        cout << k << " ";
+        int vectorElements = c.size();
+        cout << vectorElements << " ";
     }
      high_resolution_clock::time_point t2 = high_resolution_clock::now();
      duration<double> time_span = duration_cast<duration<double>>(t2 - t1);
