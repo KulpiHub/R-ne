@@ -8,8 +8,8 @@ int main() {
         sentence.push_back(Letter);
    int i = 0;
    std::vector<int> alphabet(26);
-   int emptyArray;
    while (sentence[i] != '\0') {
+      int emptyArray;
       if (sentence[i] >= 'A' && sentence[i] <= 'Z')
             {
                 emptyArray = sentence[i]-'A';
