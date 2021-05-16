@@ -2,32 +2,32 @@
 #include <vector>
 #include <iostream>
 
-void selection_sort(std::vector<int> wektor);
-void selection_sort(std::vector<int> wektor){
-    for (unsigned i = 0; i < wektor.size() - 1; i++){
+void selection_sort(std::vector<int> vector);
+void selection_sort(std::vector<int> vector){
+    for (unsigned i = 0; i < vector.size() - 1; i++){
         unsigned min = i;
 
-        for (unsigned j = i + 1; j < wektor.size(); j++) {
-            if (wektor[j] < wektor[min]) {
+        for (unsigned j = i + 1; j < vector.size(); j++) {
+            if (vector[j] < vector[min]) {
                 min = j;
             }
         }
         if (min != i) {
-            int temp = wektor[min];
-            wektor[min] = wektor[i];
-            wektor[i] = temp;
+            int temp = vector[min];
+            vector[min] = vector[i];
+            vector[i] = temp;
         }
     }
 }
 int main (){
     int a;
-    std::vector<int> wektor;
+    std::vector<int> vector;
         std::cin >> a;
-        wektor.push_back(a);
+        vector.push_back(a);
 
-    selection_sort(wektor);
+    selection_sort(vector);
 
-    for (unsigned i = 0; i < wektor.size(); i++){
-        std::cout << wektor[i] << " ";
+    for (unsigned i = 0; i < vector.size(); i++){
+        std::cout << vector[i] << " ";
     }
 }
