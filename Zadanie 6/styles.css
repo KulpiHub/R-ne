@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+    height: 100vh;
+}
+h1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: Arial;
+    text-shadow: 5px 2px 2px #0005;
+}
