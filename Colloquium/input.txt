@@ -1,0 +1,4 @@
+                 5.0 5.0 5.0
+Einstein         1.5 3.0 0.5
+Chopin           0.5 3.5 2.5
+Sklodowska-Curie 5.0 5.0 5.0

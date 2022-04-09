@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <link rel="stylesheet" href="styles2.css">
+        <title> Formularz </title>
+    </head>
+    
+    <body>
+        <div class="mainHeader">Oldtimier Club
+            <div><img class="headerImage" src="https://img.joemonster.org/images/vad/img_47924/9419f775b36f4f93f77114d30d8d1577.jpg" alt="baleron"></div>
+        </div>
+        <div class="mainPage">
+        <div class="mainMenu">
+            <ul class="menuList">
+                <li class="menuButton">Główna</li>
+                <li class="menuButton">Giełda</li>
+                <li class="lastButton">Kontakt</li>
+            </ul>
+        </div>
+        <form action="form.php" class="form" method="post">
+        <table class="table">
+            <tr>
+                <td class="tableHeader" colspan="2">Formularz dodawania ogłoszenia</td>
+            </tr>
+            <tr>
+                <td class="tableValue">Marka</td>
+                <td><input class="tableInput" type="text" name="marka" value=""></td>
+            </tr>
+            <tr>
+                <td class="tableValue">Model</td>
+                <td><input class="tableInput" type="text" name="modell" value=""></td>
+            </tr>
+            <tr>
+                <td class="tableValue">Rok</td>
+                <td><input class="tableInput2" type="text" name="rok" value=""></td>
+            </tr>
+            <tr>
+                <td class="tableValue">Kolor</td>
+                <td><input class="tableInput2" type="text" name="kolor" value=""></td>
+            </tr>
+            <tr>
+                <td class="tableValue">Typ Nadwozia:</td>
+                <td><input type="radio" name="nadwozie" value="Hatchback" />Hatchback<br />
+                    <input type="radio" name="nadwozie" value="Kombi" />Kombi<br />
+                    <input type="radio" name="nadwozie" value="Sedan" />Sedan<br />
+                    <input type="radio" name="nadwozie" value="Limuzyna" />Limuzyna</td>
+            </tr>
+            <tr>
+                <td class="tableValue">Silnik</td>
+                <td><input type="radio" name="paliwo" value="Benzyna" />Benzyna<br/>
+                    <input type="radio" name="paliwo" value="Diesel" />Diesel</td>
+            </tr>
+            <tr>
+                <td class="tableValue">Wyposażenie</td>
+                <td><input type="checkbox" name="wyp[]" value="Klimatyzacja">Klimatyzacja<br/>
+                <input type="checkbox" name="wyp[]" value="ABS">ABS<br/>
+                <input type="checkbox" name="wyp[]" value="Wspomaganie kierownicy">Wspomaganie kierownicy
+                </td>
+            </tr>
+            <tr>
+                <td class="tableValue">Stan ogólny</td>
+                <td><select class="tableInput" name="stan">
+                    <option value="Zły">Zły</option>
+                    <option value="Średni">Średni</option>
+                    <option value="Dobry">Dobry</option>
+                    <option value="Bardzo dobry">Bardzo dobry</option>
+                    <option value="Idealny">Idealny</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="tableValue">Opis</td>
+                <td><textarea name="uwagi" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" class="button" name="potwierdz" value="Potwierdź">
+                                <input type="reset" class="button" name="wyczysz" value="Wyczyść"></td>
+            </tr>
+        </table>
+        </form>
+    </div>
+    </body>
+</html>

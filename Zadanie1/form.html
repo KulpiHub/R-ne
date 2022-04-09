@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Formularz </title>
+        <style>
+            .form {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+            }
+            th, td {
+                border: 1px solid black;
+            }
+            .button {
+                margin-left: 5.5%;
+                width: 200px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <form action="form.php" class="form" method="post">
+        <table class="table">
+            <tr>
+                <td colspan="2">Formularz dodawania ogłoszenia</td>
+            </tr>
+            <tr>
+                <td>Marka</td>
+                <td><input type="text" name="marka" value=""></td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td><input type="text" name="modell" value=""></td>
+            </tr>
+            <tr>
+                <td>Rok</td>
+                <td><input type="text" name="rok" value=""></td>
+            </tr>
+            <tr>
+                <td>Kolor</td>
+                <td><input type="text" name="kolor" value""></td>
+            </tr>
+            <tr>
+                <td>Typ Nadwozia:</td>
+                <td><input type="radio" name="nadwozie" value="Hatchback" />Hatchback<br />
+                    <input type="radio" name="nadwozie" value="Kombi" />Kombi<br />
+                    <input type="radio" name="nadwozie" value="Sedan" />Sedan<br />
+                    <input type="radio" name="nadwozie" value="Limuzyna" />Limuzyna</td>
+            </tr>
+            <tr>
+                <td>Silnik</td>
+                <td><input type="radio" name="paliwo" value="Benzyna" />Benzyna<br/>
+                    <input type="radio" name="paliwo" value="Diesel" />Diesel</td>
+            </tr>
+            <tr>
+                <td>Wyposażenie</td>
+                <td><input type="checkbox" name="wyp[]" value="Klimatyzacja">Klimatyzacja<br/>
+                <input type="checkbox" name="wyp[]" value="ABS">ABS<br/>
+                <input type="checkbox" name="wyp[]" value="Wspomaganie kierownicy">Wspomaganie kierownicy
+                </td>
+            </tr>
+            <tr>
+                <td>Stan ogólny</td>
+                <td><select name="stan">
+                    <option value="Zły">Zły</option>
+                    <option value="Średni">Średni</option>
+                    <option value="Dobry">Dobry</option>
+                    <option value="Bardzo dobry">Bardzo dobry</option>
+                    <option value="Idealny">Idealny</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Opis</td>
+                <td><textarea name="uwagi" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" class="button" name="potwierdz" value="Potwierdź">
+                                <input type="reset" class="button" name="wyczysz" value="Wyczyść"></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
