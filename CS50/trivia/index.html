@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let correct = document.querySelectorAll('.correct');
+                for (let i = 0; i < correct.length; i++) {
+                correct[i].addEventListener('click', function() {
+                    correct[i].style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                    });
+                }
+                let incorrect = document.querySelectorAll('.incorrect');
+                for (let j = 0; j < incorrect.length; j++) {
+                    incorrect[j].addEventListener('click', function() {
+                        incorrect[j].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = "Incorrect.";
+                    });
+                }
+
+            let answer = document.querySelector('.textBox');
+            let check = document.querySelector('#check');
+            let correctAnswer = "Wraith of The Lich King";
+            check.addEventListener('click', function() {
+                if (answer.value.toLowerCase() == correctAnswer.toLowerCase("Wraith of The Lich King")) {
+                    check.style.backgroundColor = 'green'
+                    document.querySelector('#feedback2').innerHTML = "Correct!";
+                    }
+                else {
+                    check.style.backgroundColor = 'red'
+                    document.querySelector('#feedback2').innerHTML = "Incorrect.";
+                    }
+                })
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What are the game titles developed by Blizzard Entertainment?</h3>
+                <button class='incorrect'>Cyberpunk 2077</button>
+                <button class='correct'>World of Warcraft</button>
+                <button class='incorrect'>Battlefield 5</button>
+                <button class='correct'>Candy Crush Saga</button>
+                <button class='correct'>Diablo 2</button>
+                <button class='incorrect'>Dying Light</button>
+
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which World of Warcraft expansion Arthas Menethil was the main antagonist?</h3>
+                <input class="textBox"></input>
+                <button id="check">Check answer</button>
+
+                <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>
