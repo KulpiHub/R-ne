@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: look like algorythm has O(n^2), least efficient
+
+sort2 uses: merge sort
+
+How do you know?: the fastest of 3 algorythms, for sure it is merge sort as it has time complexity of O(nlogn)
+
+sort3 uses: selection sort
+
+How do you know?: looks like algorythm has O(n^2) time complexity, but is stil more efficient than sort1
